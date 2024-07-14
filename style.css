@@ -1,31 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 * {
   font-family: Poppins;
   margin: 0;
   padding: 0;
-  
+
 }
 
 body {
   background-color: #28194B;
 }
 
+/* Footer Styles */
+
+
+footer {
+  position: absolute;  
+  bottom: 0;
+  background: linear-gradient(to top, #c300ffd7, transparent) ;
+  text-align: center;
+  width: 100%;
+}
+
 /* Navbar Styles */
 .homenav {
-  background: linear-gradient(#BE41B2, #281948);
+  background: linear-gradient(#c300ffd7, transparent);
   color: #fff;
   font-size: 20px;
   text-align: center;
   padding: 20px;
-  width: 100%;
 }
 
 .homenav ul {
   top: 0;
   width: 100%;
-  list-style-type: none;
 }
 
 div.navopt {
@@ -34,6 +42,7 @@ div.navopt {
   text-transform: lowercase;
   font-weight: 500;
   gap: 30px;
+  margin: 0 30px;
 }
 
 .homenav li {
@@ -48,14 +57,13 @@ div.navopt {
 #logo {
   font-size: 28px;
   font-weight: 700;
-  border: solid;
   justify-content: flex-start;
 }
 
+/* Card Styles */
 
- /* Card Styles */  
- 
-.card a, p {
+.card a,
+p {
   text-decoration: none;
   color: #fff;
   word-wrap: break-word;
@@ -66,7 +74,7 @@ div.navopt {
   width: 300px;
   height: 300px;
   border-radius: 8px;
-} 
+}
 
 .card {
   display: flex;
