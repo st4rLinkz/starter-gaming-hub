@@ -7,7 +7,8 @@
 
 }
 
-body {
+body,
+html {
   background-color: #28194B;
 }
 
@@ -15,16 +16,16 @@ body {
 
 
 footer {
-  position: absolute;  
+  position: absolute;
   bottom: 0;
-  background: linear-gradient(to top, #c300ffd7, transparent) ;
+  background: linear-gradient(to top, #c300ff9f, transparent 90%);
   text-align: center;
   width: 100%;
 }
 
 /* Navbar Styles */
 .homenav {
-  background: linear-gradient(#c300ffd7, transparent);
+  background: linear-gradient(to bottom, #c300ff9f, transparent 90%);
   color: #fff;
   font-size: 20px;
   text-align: center;
@@ -85,6 +86,13 @@ p {
   border-radius: 8px;
   width: 300px;
   padding: 10px;
+  transition-duration: 0.3s;
+}
+
+.card:hover {
+  border-color: rgb(255, 129, 255);
+  color: rgb(255, 129, 255);
+  transform: scale(110%);
 }
 
 section.cardgame {
@@ -92,4 +100,26 @@ section.cardgame {
   margin: 20px auto;
   padding: 20px;
   justify-content: space-around;
+}
+
+.play {
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+}
+
+
+.playbutton {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  border: solid white 2px;
+  border-radius: 10px;
+  transition-duration: .5s;
+}
+
+.playbutton:hover {
+  border-color: rgb(255, 129, 255);
+  color: rgb(255, 129, 255);
+  transform: scale(130%);
 }
